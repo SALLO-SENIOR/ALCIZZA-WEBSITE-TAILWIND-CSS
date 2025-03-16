@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALCIZZA TECHNOLOGY</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="bg-primary text-white font-bold font-poppins flex justify-around items-center p-3 text-lg px-5">
+        <h1 class="uppercase text-3xl">ALCIZZA TECHNOLOGY</h1>
+        <ul class="absolute top-14 bg-primary w-[90vw] flex flex-col gap-3 p-2 rounded-lg hidden md:static md:flex md:flex-row md:w-auto" id="nav-links">
+            <li><a href="#" class="hover:underline hover:text-secondary">HOME</a></li>
+            <li><a href="#" class="hover:underline hover:text-secondary">ABOUT</a></li>
+            <li><a href="#" class="hover:underline hover:text-secondary">SERVICES</a></li>
+            <li><a href="#" class="hover:underline hover:text-secondary">CONTACT</a></li>
+        </ul>
+        <div class="md:hidden">
+            <li class="fa-solid fa-bars cursor-pointer"></li>
+        </div>
+    </nav>
+    
+    <div class="h-screen bg-darkblue flex flex-col p-4 text-center md:flex-row justify-between items-center" id="hero">
+        <!-- Left Section: Heading and Button -->
+        <div class="md:w-1/2">
+            <h1 class="text-white font-bold text-2xl md:text-6xl mt-20 md:mt-0 md:mb-10"><span class="text-secondary">ALCIZZA</span> TECHNOLOGY</h1>
+            <h2 class="text-white font-bold text-1xl md:text-3xl mt-5 md:mt-3">We Have For You: 
+                <span class="text-secondary">Database System, CCTV Camera, Fingerprint, Various Websites, Digital Marketing</span>
+            </h2>
+            <button class="bg-secondary p-2 md:p-3 text-white rounded-2xl font-bold mt-5 hover:bg-primary cursor-pointer">Get Started</button>
+        </div>
+    
+        <!-- Right Section: Image -->
+        <div class="md:w-1/2 mt-8 md:mt-0">
+            <img src="/images/54.png" alt="Technology Image" class="w-full max-w-[63%] md:max-[75%] mx-auto">
+        </div>
+    </div>
+    
+
+
+
+    <div id="services" class="bg-primary p-4 ">
+        <h2 class="text-center text-2xl md:text-6xl font-poppins font-bold text-white m-3">Our Services</h2>
+        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:max-w-[90vw] mx-auto md:mt-20">
+            <div class="box bg-white border-4 border-secondary p-4 rounded-lg shadow-sm shadow-white hover:shadow-lg transition-hover duration-300 cursor-pointer">
+                <img src="/images/sarvice1.jpg" alt="" class="rounded-lg">
+                <h2 class="text-center font-bold text-darkblue">CCTV CAMERA
+                    CONFIGERATION</h2>
+            </div>
+            <div class="box bg-white border-4 border-secondary p-4 rounded-lg shadow-sm shadow-white hover:shadow-lg transition-hover duration-300 cursor-pointer">
+                <img src="/images/sarvice1.jpg" alt="" class="rounded-lg">
+                <h2 class="text-center font-bold text-darkblue">CCTV CAMERA
+                    CONFIGERATION</h2>
+            </div>
+            <div class="box bg-white border-4 border-secondary p-4 rounded-lg shadow-sm shadow-white hover:shadow-lg transition-hover duration-300 cursor-pointer">
+                <img src="/images/sarvice1.jpg" alt="" class="rounded-lg">
+                <h2 class="text-center font-bold text-darkblue">CCTV CAMERA
+                    CONFIGERATION</h2>
+            </div>
+            <div class="box bg-white border-4 border-secondary p-4 rounded-lg shadow-sm shadow-white hover:shadow-lg transition-hover duration-300 cursor-pointer">
+                <img src="/images/sarvice1.jpg" alt="" class="rounded-lg">
+                <h2 class="text-center font-bold text-darkblue">CCTV CAMERA
+                    CONFIGERATION</h2>
+            </div>
+            <div class="box bg-white border-4 border-secondary p-4 rounded-lg shadow-sm shadow-white hover:shadow-lg transition-hover duration-300 cursor-pointer">
+                <img src="/images/sarvice1.jpg" alt="" class="rounded-lg">
+                <h2 class="text-center font-bold text-darkblue">CCTV CAMERA
+                    CONFIGERATION</h2>
+            </div>
+            <div class="box bg-white border-4 border-secondary p-4 rounded-lg shadow-sm shadow-white hover:shadow-lg transition-hover duration-300 cursor-pointer">
+                <img src="/images/sarvice1.jpg" alt="" class="rounded-lg">
+                <h2 class="text-center font-bold text-darkblue">CCTV CAMERA
+                    CONFIGERATION</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bars = document.querySelector('.fa-bars')
+        let nav_links = document.querySelector('#nav-links')
+
+        bars.addEventListener('click', () => {
+            nav_links.classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>
